@@ -1,0 +1,648 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global Font Update */
+body {
+  font-family: 'Quicksand', sans-serif;
+  background-color: #fbd1c5;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Funky Header Font */
+header h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 2.8em;
+  color: #cc0000;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px #FFD700;
+}
+
+/* Navigation Font */
+nav ul li a {
+  font-family: 'Pacifico', cursive;
+  text-decoration: none;
+  color: #cc0000;
+  font-weight: bold;
+  padding: 8px 16px;
+  border: 2px solid #cc0000;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s, text-shadow 0.3s;
+}
+
+/* Hover Glow */
+nav ul li a:hover,
+nav ul li a:focus {
+  background-color: #cc0000;
+  color: #fff;
+  text-shadow: 1px 1px 5px #FFD700;
+}
+
+/* Section Headers */
+.hero h2, main h2 {
+  font-family: 'Pacifico', cursive;
+  color: #cc0000;
+  text-shadow: 1px 1px #FFD700;
+}
+
+main {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.gallery-grid,
+.sponsors-grid,
+.testimonials-grid,
+.team,
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.gallery-row,
+.sponsors-grid,
+.testimonials-grid,
+.team,
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.testimonials-grid,
+.team,
+.about {
+  justify-content: center;
+}
+
+.gallery-item,
+.sponsor,
+.testimonial-card,
+.member {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  width: 200px;
+  height: auto;
+  border: 3px solid red;
+  padding: 10px;
+  display: block;
+  margin: 0 auto 10px;
+  border-radius: 10px;
+  transition: transform 0.3s, border-color 0.3s;
+}
+
+img:hover {
+  transform: scale(1.05);
+  border-color: darkred;
+}
+
+.about img.centered-img {
+  width: 350px;
+  margin-bottom: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 0.9em;
+  color: #666;
+}
+
+header h1::after,
+main h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: red;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+input:focus,
+textarea:focus {
+  border: 2px solid darkred;
+  outline: none;
+}
+
+button:active {
+  background-color: darkred;
+  transform: scale(0.98);
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gallery-row,
+  .sponsors-grid,
+  .testimonials-grid,
+  .team,
+  .about {
+    flex-wrap: wrap;
+  }
+
+  img {
+    width: 150px;
+  }
+
+  .about img.centered-img {
+    width: 250px;
+  }
+}
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #fbd1c5;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 2.5em;
+  color: #cc0000;
+  margin-bottom: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #cc0000;
+  font-weight: bold;
+  padding: 8px 16px;
+  border: 2px solid #cc0000;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+  background-color: #cc0000;
+  color: white;
+}
+
+nav ul li a:visited {
+  color: #990000;
+}
+
+main {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Grid Layouts */
+.gallery-grid,
+.sponsors-grid,
+.testimonials-grid,
+.team,
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.gallery-row,
+.sponsors-grid,
+.testimonials-grid,
+.team,
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.testimonials-grid,
+.team,
+.about {
+  justify-content: center;
+}
+
+.gallery-item,
+.sponsor,
+.testimonial-card,
+.member {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  width: 200px;
+  height: auto;
+  border: 3px solid red;
+  padding: 10px;
+  display: block;
+  margin: 0 auto 10px;
+  border-radius: 10px;
+  transition: transform 0.3s, border-color 0.3s;
+}
+
+img:hover {
+  transform: scale(1.05);
+  border-color: darkred;
+}
+
+.about img.centered-img {
+  width: 350px;
+  margin-bottom: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.hero h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #cc0000;
+}
+
+.hero p {
+  font-size: 1.1em;
+  color: #333;
+}
+
+/* Footer */
+footer {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 0.9em;
+  color: #666;
+}
+
+/* Header and Main Section Borders */
+header h1::after,
+main h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: red;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* Form Styles */
+input:focus,
+textarea:focus {
+  border: 2px solid darkred;
+  outline: none;
+}
+
+button:active {
+  background-color: darkred;
+  transform: scale(0.98);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gallery-row,
+  .sponsors-grid,
+  .testimonials-grid,
+  .team,
+  .about {
+    flex-wrap: wrap;
+  }
+
+  img {
+    width: 150px;
+  }
+
+  .about img.centered-img {
+    width: 250px;
+  }
+
+  .hero h2 {
+    font-size: 1.8em;
+  }
+
+  .hero p {
+    font-size: 1em;
+  }
+}
+.bg-orange {
+  background-color: #FFA07A; /* Coral orange */
+}
+
+.bg-yellow {
+  background-color: #FFF176; /* Bright yellow */
+}
+
+.bg-pink {
+  background-color: #FFB6C1; /* Light pink */
+}
+
+.bg-mint {
+  background-color: #98FF98; /* Mint green */
+}
+
+.bubble-bg {
+  background-color: #98FF98; /* Mint green */ 
+  /* Keep any existing bubble styles here */
+}
+
+.bg-sky {
+  background-color: #87CEFA; /* Soft sky blue */
+}
+/* Overall layout for fete cards */
+.fete-events {
+  display: flex;
+  flex-direction: column;
+  gap: 40px; /* Space between each fete event */
+}
+
+.fete-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.fete-card img {
+  width: 100%;
+  max-width: 500px; /* Image size */
+  height: auto;
+  border-radius: 8px;
+}
+
+.fete-text {
+  flex: 1;
+  max-width: 600px; /* Text box size */
+}
+
+.fete-card h2 {
+  font-size: 1.8em;
+  color: #cc0000; /* Text color */
+  margin-bottom: 10px;
+}
+
+.fete-card p {
+  font-size: 1em;
+  color: #333;
+}
+
+/* Reverse order for alternating text and image positions */
+.fete-card.reverse {
+  flex-direction: row-reverse;
+}
+
+.fete-card.reverse img {
+  order: 2; /* Ensures image comes second in reversed order */
+}
+
+.fete-card .fete-text {
+  order: 1; /* Ensures text comes first in reversed order */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .fete-card {
+    flex-direction: column;
+    align-items: center;
+  }
+  .fete-card img {
+    max-width: 100%;
+  }
+}
+
+.testimonials-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 20px;
+}
+
+/* Core layout for testimonial cards */
+.testimonial-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+/* Reverse layout */
+.testimonial-card.reverse {
+  flex-direction: row-reverse;
+}
+
+.testimonial-card img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border: 5px solid red;
+  padding: 14px;
+  border-radius: 10px;
+}
+
+/* Text block inside testimonial card */
+.testimonial-text {
+  flex: 1;
+  max-width: 600px;
+}
+
+.testimonial-text h2 {
+  font-size: 1.6em;
+  color: #cc0000;
+  margin-bottom: 10px;
+}
+
+.testimonial-text p {
+  font-size: 1em;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .testimonial-card {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+  }
+
+  .testimonial-card.reverse {
+    flex-direction: column-reverse;
+  }
+
+  .testimonial-card img {
+    max-width: 80%;
+  }
+}
+
+/* Centered page container */
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  padding: 40px 20px;
+}
+
+/* Card-style form */
+.register-card {
+  background-color: #fff5e6;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  max-width: 450px;
+  width: 100%;
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.register-card h2 {
+  font-family: 'Pacifico', cursive;
+  font-size: 2em;
+  color: #cc0000;
+  margin-bottom: 20px;
+}
+
+/* Form fields */
+.register-card label {
+  display: block;
+  text-align: left;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #444;
+}
+
+.register-card input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 6px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  font-size: 1em;
+  font-family: 'Quicksand', sans-serif;
+  transition: border 0.3s;
+}
+
+.register-card input:focus {
+  border-color: #ff6f61;
+  outline: none;
+}
+
+/* Button styling */
+.register-card button {
+  margin-top: 25px;
+  background-color: #cc0000;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1em;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.register-card button:hover {
+  background-color: #ff3300;
+}
+
+.map-section {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #ffe6f0;
+}
+
+.map-section h3 {
+  font-size: 1.8em;
+  font-family: 'Pacifico', cursive;
+  color: #cc0000;
+  margin-bottom: 20px;
+}
+
+.map-container iframe {
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+  max-width: 900px;
+  width: 100%;
+  height: 300px;
+  margin: 0 auto;
+  display: block;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.form-buttons button {
+  flex: 1;
+  margin: 0 5px;
+}
+
+/* Optional: Add button hover styles if not included yet */
+.register-card button:hover {
+  background-color: #ff3300;
+}
+
+.acknowledgement {
+  text-align: center; /* Centers the text horizontally */
+  font-size: 1.2rem;  /* Adjust size if necessary */
+}
+
+.bubble-note {
+  display: inline-block; /* Ensures the background wraps the text */
+  background-color: #ffeb3b; /* Add a fun background color */
+  padding: 1rem; /* Spacing around text */
+  border-radius: 15px; /* Rounded corners for the bubble effect */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+  margin: 20px auto; /* Centers the bubble block itself */
+}
